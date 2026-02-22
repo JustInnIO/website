@@ -19,14 +19,14 @@ const config: Config = {
   favicon: "img/branding/favicon.png",
 
   // Set the production url of your site here
-  url: "https://configforge.opsora.io",
+  url: "https://configforge.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "opsora", // Usually your GitHub org/user name.
+  organizationName: "configforgelabs", // Usually your GitHub org/user name.
   projectName: "configforge", // Usually your repo name.
 
   onBrokenLinks: "warn",
@@ -217,8 +217,9 @@ const config: Config = {
         feedOptions: {
           xslt: true,
           type: "all",
-          title: "ConfigForge.com",
+          title: "ConfigForge",
           copyright: `ConfigForge is the knowledge hub by Opsora. © ${new Date().getFullYear()} Opsora.`,
+          
         },
         // Please change this to your repo.
         // Remove this to remove the "edit this page" links.

@@ -7,14 +7,14 @@ import { useLocation } from 'react-router-dom';
 
 export default function HyvorTalkComponent() {
     const { colorMode } = useColorMode();
-    const { siteConfig, siteMetadata } = useDocusaurusContext();
+    const { siteConfig } = useDocusaurusContext();
     const location = useLocation();
-    const slug = location.pathname.split('/').pop();
+    const pageId = siteConfig.url + location.pathname.replace(/\/$/, '');
 
     return (
         <Comments
             website-id={9194}
-            //page-id={slug}
+            page-id={pageId}
             on={{
                 'loaded': () => console.log('Comments loaded'),
                 'comment:published': () => console.log('Comment published'),
